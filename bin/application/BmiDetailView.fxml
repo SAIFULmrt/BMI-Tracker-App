@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.BmiDetailViewController">
+	<children>
+		<AnchorPane prefHeight="550.0" prefWidth="655.0">
+			<children>
+				<ImageView fx:id="profileImageView" fitHeight="189.0"
+					fitWidth="211.0" layoutX="93.0" layoutY="135.0" pickOnBounds="true"
+					preserveRatio="true" />
+				<VBox layoutX="338.0" layoutY="135.0" prefHeight="202.0"
+					prefWidth="268.0">
+					<children>
+						<Label fx:id="fullNameLabel" prefHeight="33.0"
+							prefWidth="263.0" text="Full Name">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Label>
+						<Label fx:id="ageLabel" prefHeight="34.0" prefWidth="265.0"
+							text="Age">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Label>
+						<Label fx:id="bmiLabel" prefHeight="34.0" prefWidth="266.0"
+							text="BMI">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Label>
+						<Label fx:id="bmiStatusLabel" prefHeight="34.0"
+							prefWidth="263.0" text="BMI Status">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Label>
+						<Label fx:id="weightLabel" prefHeight="34.0"
+							prefWidth="266.0" text="Weight">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Label>
+						<Label fx:id="heightLabel" prefHeight="34.0"
+							prefWidth="263.0" text="Height">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Label>
+					</children>
+					<padding>
+						<Insets left="5.0" />
+					</padding>
+				</VBox>
+				<Button fx:id="closeButton" layoutX="419.0" layoutY="364.0"
+					mnemonicParsing="false" onAction="#handleCloseButtonClicked"
+					prefHeight="27.0" prefWidth="69.0" text="Close">
+					<font>
+						<Font name="System Bold" size="12.0" />
+					</font>
+				</Button>
+			</children>
+			<padding>
+				<Insets left="50.0" />
+			</padding>
+		</AnchorPane>
+	</children>
+</FlowPane>
